@@ -1,0 +1,33 @@
+package Unit_3._3_3.battleshipsmove;
+
+public class Battleship {
+    private String shipType;
+    private int position;
+
+    public Battleship(String type, int shipPosition)
+    {
+        shipType = type;
+        position = shipPosition;
+    }
+
+    // Moves the ship
+    // If safeToMove is true, add 10 to position
+    // else subtract 1 from position
+    public void move (boolean safeToMove)
+    {
+        if (safeToMove == true) position +=10;
+        else position -= 1;
+    }
+
+    // Returns the position of the ship
+    public int getPosition()
+    {
+        return position;
+    }
+
+    // String representation of the object
+    public String toString()
+    {
+        return shipType + " at " + position;
+    }
+}
