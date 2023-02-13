@@ -2,14 +2,14 @@ package Unit_8.labs.tictactoe;
 
 public class TicTacToe {
     public static void determineWinner(String game){
-        char[][] board = new char[3][3];
         char[] gameArray = game.toCharArray();
         
         //copy board into 2d array
+        char[][] board = new char[3][3];
         for (int i = 0; i < 3; i++) {
-            board[i][0] = gameArray[i];
-            board[i][1] = gameArray[i + 3];
-            board[i][2] = gameArray[i + 6];
+            board[0][i] = gameArray[i];
+            board[1][i] = gameArray[i + 3];
+            board[2][i] = gameArray[i + 6];
         }
 
         //print board
