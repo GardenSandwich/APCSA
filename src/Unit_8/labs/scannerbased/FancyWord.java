@@ -1,10 +1,7 @@
-package Unit_8.labs.submittedversions;
+package Unit_8.labs.scannerbased;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class FancyWord {
     static void printAsHourGlass(String string){
@@ -38,22 +35,15 @@ public class FancyWord {
 
 class FancyWordRunner {
     public static void main(String[] args) {
-        File input = new File("src/Unit_8/labs/fancyword/fancyword.txt");
-        String currentLine;
-
-
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader(input));
-            currentLine = reader.readLine();
-            int dataLength = Integer.valueOf(currentLine);
-
-            for (int i = 0; i < dataLength; i++) {
-                currentLine = reader.readLine();
-                FancyWord.printAsHourGlass(currentLine);
-                System.out.println("\n");
+        Scanner input = new Scanner(System.in);
+        while (true) {
+            System.out.print("Enter a word or \"quit\" to exit: ");
+            String word = input.nextLine();
+            if (word.equals("quit")) {
+                break;
             }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            FancyWord.printAsHourGlass(word);
+            System.out.println("\n");
         }
     }
 }

@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class FancyWordRunner {
     public static void main(String[] args) {
-        File input = new File("src/Unit_8/labs/fancyword/fancyword.txt");
+        File input = new File("src/Unit_8/labs/fancyword/fancyword.dat");
         String currentLine;
 
 
