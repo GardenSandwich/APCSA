@@ -18,7 +18,7 @@ public class TicTacToe {
         printBoard(board);
 
         if (checkRow(board) != ' '){
-            System.out.println(checkRow(board) + " wins horiontally!");
+            System.out.println(checkRow(board) + " wins horizontally!");
         } else if (checkCol(board) != ' '){
             System.out.println(checkCol(board) + " wins vertically!");
         } else if (checkDiag(board) != ' '){
