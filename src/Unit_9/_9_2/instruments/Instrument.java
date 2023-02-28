@@ -16,4 +16,9 @@ public class Instrument {
     public String getFamily() {
         return family;
     }
+
+    @Override
+    public String toString() {
+        return this.name + " is a member of the " + this.family + " family.";
+    }
 }
