@@ -1,0 +1,28 @@
+package Unit_9._9_4.onlinecompanies;
+
+public class OnlineCompany extends Company{
+    private String webAddress;
+
+    public OnlineCompany(String name, String webAddress){
+        super(name);
+        this.webAddress = webAddress;
+    }
+
+    //Return the website address
+
+    public String address(){
+        return this.webAddress;
+    }
+
+    /**
+     * Remember To get name from superclass, use super.getName()
+     *
+     * Example Output:
+     * CodeHS
+     * www.codehs.com
+     */
+
+    public String toString(){
+        return super.getName() + "\n" + this.address();
+    }
+}
