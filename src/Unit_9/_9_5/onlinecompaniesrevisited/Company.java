@@ -1,0 +1,45 @@
+package Unit_9._9_5.onlinecompaniesrevisited;
+
+public class Company {
+
+    private String name;
+    private String streetAddress;
+    private String city;
+    private String state;
+
+    // Set missing values to null
+    public Company(String name){
+        this.name = name;
+    }
+
+
+    public Company(String name, String streetAddress, String city, String state){
+        this.name = name;
+        this.streetAddress = streetAddress;
+        this.city = city;
+        this.state = state;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    /**
+     * Example output:
+     * 123 Main St
+     * Springfield, OH
+     */
+    public String address(){
+        return streetAddress + "\n" + city + ", " + state;
+    }
+
+    /**
+     * Example output:
+     * Widget Company
+     * 123 Main St
+     * Springfield, OH
+     */
+    public String toString(){
+        return this.name + "\n" + this.address();
+    }
+}
