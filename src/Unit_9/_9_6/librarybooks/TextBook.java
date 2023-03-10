@@ -6,10 +6,10 @@ public class TextBook extends Book{
     int edition;
     boolean isEbook;
 
-    public TextBook(String title, String author, int edition, boolean isEBook) {
+    public TextBook(String title, String author, int edition, boolean isAnEbook) {
         super(title, author);
         this.edition = edition;
-        this.isEbook = isEbook;
+        this.isEbook = isAnEbook;
     }
 
     public int getEdition() {
