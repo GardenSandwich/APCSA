@@ -6,28 +6,30 @@ public class BookTester {
     public static void main(String[] args) {
         ArrayList<Book> books = new ArrayList<>();
 
-        books.add(new Book("The Hobbit", "J.R.R. Tolkien"));
-        books.add(new Novel("The Lord of the Rings", "J.R.R. Tolkien", 10, "Fantasy"));
-        books.add(new TextBook("Java for Dummies", "John Doe", 3, true));
+        //add three textbooks and three novels
+        books.add(new TextBook("Java for Dummies", "John Doe", 1, true));
+        books.add(new TextBook("Beginning Java", "Jane Doe", 2, true));
+        books.add(new TextBook("Java for Experts", "John Smith", 3, true));
 
-        //add two more text books and two more novels
-        books.add(new TextBook("C# for Dummies", "Your Mom", 3, true));
+        books.add(new Novel("The Hobbit", "J.R.R. Tolkien", 4, "Fantasy"));
+        books.add(new Novel("The Lord of the Rings", "J.R.R. Tolkien", 5, "Fantasy"));
+        books.add(new Novel("The Silmarillion", "J.R.R. Tolkien", 6, "Fantasy"));
 
-        //print out all book info
-        System.out.println(books.get(0).toString());
-        System.out.println(books.get(0).getTitle());
-        System.out.println(books.get(0).getAuthor());
-
-        System.out.println(books.get(1).toString());
-        System.out.println(books.get(1).getTitle());
-        System.out.println(books.get(1).getAuthor());
-        System.out.println( ((Novel) books.get(1)).getReadingLevel());
-        System.out.println(((Novel) books.get(1)).getGenre());
-
-        System.out.println(books.get(2).toString());
-        System.out.println(books.get(2).getTitle());
-        System.out.println(books.get(2).getAuthor());
-        System.out.println(((TextBook) books.get(2)).getEdition());
-        System.out.println(((TextBook) books.get(2)).isEbook());
+        //loop the arrayList and print out all book info
+        for (Book book : books) {
+            if(book instanceof TextBook) {
+                System.out.println(book);
+                System.out.println(book.getTitle());
+                System.out.println(book.getAuthor());
+                System.out.println(((TextBook) book).getEdition());
+                System.out.println(((TextBook) book).isEbook);
+            } else {
+                System.out.println(book);
+                System.out.println(book.getTitle());
+                System.out.println(book.getAuthor());
+                System.out.println(((Novel) book).getReadingLevel());
+                System.out.println(((Novel) book).getGenre());
+            }
+        }
     }
 }
