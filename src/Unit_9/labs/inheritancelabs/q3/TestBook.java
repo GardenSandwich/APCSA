@@ -1,4 +1,4 @@
-package Unit_9.labs.q3;
+package Unit_9.labs.inheritancelabs.q3;
 
 public class TestBook {
     public static void main(String[] args) {

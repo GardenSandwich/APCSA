@@ -1,4 +1,4 @@
-package Unit_9.labs.submittedversions;
+package Unit_9.labs.inheritancelabs.submittedversions;
 
 public class Q2 {
     public static void main(String args[]) {

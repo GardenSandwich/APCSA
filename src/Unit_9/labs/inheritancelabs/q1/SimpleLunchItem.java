@@ -1,4 +1,4 @@
-package Unit_9.labs.q1;
+package Unit_9.labs.inheritancelabs.q1;
 
 import java.text.DecimalFormat;
 

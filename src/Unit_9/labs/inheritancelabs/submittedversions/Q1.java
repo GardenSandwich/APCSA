@@ -1,4 +1,4 @@
-package Unit_9.labs.submittedversions;
+package Unit_9.labs.inheritancelabs.submittedversions;
 
 import java.text.DecimalFormat;
 

@@ -1,4 +1,4 @@
-package Unit_9.labs.q2;
+package Unit_9.labs.inheritancelabs.q2;
 
 public class MountainBike extends Bicycle{
     int SeatHeight;

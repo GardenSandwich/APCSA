@@ -1,4 +1,4 @@
-package Unit_9.labs.q3;
+package Unit_9.labs.inheritancelabs.q3;
 
 public class Book {
     public String author;

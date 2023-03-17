@@ -1,4 +1,4 @@
-package Unit_9.labs.submittedversions;
+package Unit_9.labs.inheritancelabs.submittedversions;
 
 public class Q3 {
     public static void main(String[] args) {
@@ -51,7 +51,7 @@ class Book {
     }
 }
 
-class EBook extends Unit_9.labs.q3.Book {
+class EBook extends Unit_9.labs.inheritancelabs.q3.Book {
     String downloadSite;
 
     int sizeMB;
